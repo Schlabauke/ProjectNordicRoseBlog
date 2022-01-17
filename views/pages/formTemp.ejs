@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Article Form</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <section>
+    <section class='Form'>
         <h2>Add new Article</h2>
         <form action='/articleDetail' method="POST">
             <input type="text" placeholder="Title" name='title'>
             <br>
-            <input type="text" placeholder="Url-Picture" name='imageUrl'>
+            <input type="text" placeholder="Url-Picture" name='url'>
             <br>
             <input type="text" placeholder="Author" name='author'>
             <br>
-            <input type="text" placeholder="Author Picture" name='authorUrl'>
+            <input type="text" placeholder="Author Picture" name='author_bild'>
             <br>
-            <input type="text" placeholder="write your article here...." name='textArticle'>
+            <input type="text" placeholder="write your article here...." name='body'>
             <br>
             <input type='submit' for='Submit' name='Submit'>
         </form>

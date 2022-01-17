@@ -19,16 +19,20 @@ app.get('/form', (req, res) => {
 })
 
 
-
 //wird kein json übergeben, sondern FormData 
-const newArticle = []
+
+
 app.post('/articleDetail', express.urlencoded(), (req, res) => {
     const inputForm = req.body
     console.log(inputForm)
-    newArticle.push(inputForm)
+    blogData.push(inputForm)
+
     res.render('pages/articleDetail', { blogData })
 }
 )
+//Wo werden die Infos zwischengespeichert?
+// Wie komme ich daran: in Array pushen, Daten tauchen nicht auf, Im HTML kommen keine Daten an. 
+//fehlt noch ein createNew-Entry() für das Array? 
 
 const PORT = 3141
 app.listen(PORT, () => console.log('Listen on Port:', PORT))

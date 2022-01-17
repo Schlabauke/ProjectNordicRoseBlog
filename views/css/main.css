@@ -1,0 +1,14 @@
+/* 
+font-family: 'Fira Code', monospace;
+font-family: 'Poppins', sans-serif;
+color background form: #E5E5E5 */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@200;300;400;500&display=swap");
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */
