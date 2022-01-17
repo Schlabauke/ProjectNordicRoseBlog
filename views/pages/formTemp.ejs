@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Article Form</title>
+</head>
+
+<body>
+    <section>
+        <h2>Add new Article</h2>
+        <form action='/articleDetail' method="POST">
+            <input type="text" placeholder="Title" name='title'>
+            <br>
+            <input type="text" placeholder="Url-Picture" name='imageUrl'>
+            <br>
+            <input type="text" placeholder="Author" name='author'>
+            <br>
+            <input type="text" placeholder="Author Picture" name='authorUrl'>
+            <br>
+            <input type="text" placeholder="write your article here...." name='textArticle'>
+            <br>
+            <input type='submit' for='Submit' name='Submit'>
+        </form>
+    </section>
+    <%- include('../pages/articleTemp.ejs') %>
+</body>
+
+</html>

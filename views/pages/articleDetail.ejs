@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail</title>
+</head>
+
+<body>
+    <%- include('../pages/headerArticle.ejs') %>
+        <article>
+            <h2>
+                <%- blogData.title %>
+            </h2>
+            <img src='/images<%- blogData.url %>' alt='random image'>
+            <div>
+                <img src='<%- blogData.author_bild %>' alt='<%- blogData.author %>'>
+                <p>
+                    <%- blogData.author %>
+                </p>
+            </div>
+            <p>
+                <%- blogData.body %>
+            </p>
+        </article>
+        <%- include('../pages/footerTemp.ejs') %>
+</body>
+
+</html>
